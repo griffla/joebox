@@ -1,0 +1,54 @@
+{
+  "name": "joebox",
+  "description": "joebox is a lightbox. I am joebox. Swipe images smoother with me.",
+  "main": "dist/js/jquery.joebox.min.js",
+  "authors": [
+    "Joscha Schmidt"
+  ],
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "lightbox",
+    "gallery",
+    "responsive",
+    "touch"
+  ],
+  "homepage": "http://joebox.joschaschmidt.de/demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests",
+    "/resources/images/",
+    "/resources/css/joebox.css.map",
+    "/resources/.sass-cache/",
+    "components/jquery/.bower.json",
+    "components/jquery/AUTHORS.txt",
+    "components/jquery/bower.json",
+    "components/jquery/LICENSE.txt",
+    "components/jquery/README.md",
+    "components/jquery-touchswipe/.bower.json",
+    "components/jquery-touchswipe/.gitignore",
+    "components/jquery-touchswipe/bower.json",
+    "components/jquery-touchswipe/jquery.touchSwipe.js",
+    "components/jquery-touchswipe/LICENSE",
+    "components/jquery-touchswipe/package.json",
+    "components/jquery-touchswipe/README.md",
+    "components/jquery-touchswipe/demos",
+    "components/jquery-touchswipe/docs",
+    "components/jquery/external",
+    "components/jquery/src",
+    "components/jquery/dist/core.js",
+    "components/jquery/dist/jquery.js",
+    "components/jquery/dist/jquery.min.map",
+    "components/jquery/dist/jquery.slim.js",
+    "components/jquery/dist/jquery.slim.min.js",
+    "components/jquery/dist/jquery.slim.min.map"
+
+  ],
+  "dependencies": {
+    "jquery-touchswipe": "^1.6.18",
+    "jquery": "^3.1.1"
+  }
+}
