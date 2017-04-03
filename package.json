@@ -1,26 +1,32 @@
 {
-    "name": "joebox",
-    "version": "1.0.0",
-    "description": "joebox is a lightbox. I am joebox. Swipe images smoother with me.",
-    "keywords": {"lightbox"
-                 ,"jquery-plugin"
-                 ,"ecosystem:jquery"
-                 ,"gallery",
-                 ,"responsive"
-                 ,"touch"
-              } ,
-  
-    "name": "Joscha Schmidt",
-    "email" : "info@joschaschmidt.de",
-    "url": "http://joebox.joschaschmidt.de/demo",
-    "license": "CC-BY-4.0",
-    "bugs": "https://github.com/griffla/joebox/issues",
-    "repository" :
-      { "type" : "git"
-      , "url" : "https://github.com/griffla/joebox.git"
-      },
-    "dependencies": {
-        "jquery": ">=1.9",
-        "touchSwipe": ">=1.5"
-    }
+  "name": "joebox",
+  "version": "1.0.0",
+  "description": "joebox is a lightbox. I am joebox. Swipe images smoother with me.",
+  "main": "dist/js/jquery.joebox.min.js",
+  "dependencies": {
+    "jquery": "^1.9",
+    "touchSwipe": "^1.6.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/griffla/joebox.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "lightbox",
+    "gallery",
+    "responsive",
+    "touch"
+  ],
+  "author": "Joscha Schmidt",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/griffla/joebox/issues"
+  },
+  "homepage": "https://github.com/griffla/joebox#readme"
 }
