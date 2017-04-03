@@ -1,0 +1,26 @@
+{
+    "name": "joebox",
+    "version": "1.0.0",
+    "description": "joebox is a lightbox. I am joebox. Swipe images smoother with me.",
+    "keywords": {"lightbox"
+                 ,"jquery-plugin"
+                 ,"ecosystem:jquery"
+                 ,"gallery",
+                 ,"responsive"
+                 ,"touch"
+              } ,
+  
+    "name": "Joscha Schmidt",
+    "email" : "info@joschaschmidt.de",
+    "url": "http://joebox.joschaschmidt.de",
+    "license": "CC-BY-4.0",
+    "bugs": "https://github.com/griffla/joebox/issues",
+    "repository" :
+      { "type" : "git"
+      , "url" : "https://github.com/griffla/joebox.git"
+      },
+    "dependencies": {
+        "jquery": ">=1.9",
+        "touchSwipe": ">=1.5"
+    }
+}

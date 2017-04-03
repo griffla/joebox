@@ -1,0 +1,147 @@
+// GENERAL
+// ------------------
+.joebox-icon {
+  background-color: $bg-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  transition: .2s;
+  width: 50px;
+  z-index: 99;
+  
+  @include desktop {
+//    height: 10vw;
+//    width: 10vw;
+//    max-height: 3em;
+//    max-width: 3em;
+  }
+  
+  &:hover {
+    background-color: $bg-color-hover;
+    transform: scale(1.1);
+  }
+  
+  i {
+    display: inline-block;
+    position: relative;
+  }
+  
+  // NAVIGATION ICONS
+  // ------------------
+  &.joebox-nav-icon {
+    bottom: 0;
+    z-index: 11;
+    
+    &.joebox-nav-prev {
+      left: 0;
+    }
+
+    &.joebox-nav-next {
+      left: 55px;
+    }
+
+    @include desktop {
+      bottom: auto;
+      margin-top: -24px;
+      top: 50%;
+      
+      &.joebox-nav-prev {
+        left: 2%;
+      }
+
+      &.joebox-nav-next {
+        left: auto;
+        right: 2%;
+      }
+    }
+
+    i {
+      border: solid $color;
+      border-width: 0 4px 4px 0;
+      margin: .9em 0 0;
+      padding: 7px;
+      position: relative;
+
+      &.joebox-icon-right {
+        margin-left: -.5em;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      &.joebox-icon-left {
+        margin-right: -.5em;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      &.joebox-icon-up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+
+      &.joebox-icon-down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      
+      // Hover
+      &:hover {
+        border-color: $color-hover;
+      }
+    }
+  }
+  
+  
+  // CLOSE ICON
+  // ------------------
+  &.joebox-close-icon {
+    bottom: 0;
+    right: 0;
+    
+    @include desktop {
+      bottom: auto;
+      top: 2%;
+      right: 2%;
+    }
+
+    i {
+      &:before, 
+      &:after {
+        background-color: $color;
+        content: ' ';
+        height: 30px;
+        left: -1px;
+        position: absolute;
+        top: -5px;
+        width: 3.5px;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+      
+      // Hover
+      &:hover {
+        background-color: $color-hover;
+      }
+    }
+  }
+  
+  &.disabled {
+    background-color: #ccc;
+    opacity: .6;
+    
+    &:hover {
+      cursor: default;
+      transform: scale(1);
+    }
+  }
+}

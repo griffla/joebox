@@ -1,0 +1,20 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.thumbnail-gallery {
+  font: 0/0 a;
+  max-width: 1400px;
+  margin: 0 auto 5vh;
+}
+
+.thumbnail-gallery > div {
+  display: inline-block;
+  width: 25%;
+}
+
+.thumbnail-gallery img {
+  max-width: 100%;
+}
+

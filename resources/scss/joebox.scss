@@ -1,0 +1,9 @@
+// Watch with: sass --watch resources/css/sass:resources/css
+
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/general"; 
+@import "partials/icons"; 
+@import "partials/loading-indicator"; 
