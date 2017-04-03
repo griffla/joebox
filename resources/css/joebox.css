@@ -68,6 +68,7 @@
   background-position: center center;
   cursor: pointer;
   height: 50px;
+  line-height: 1em;
   position: absolute;
   text-align: center;
   transition: .2s;
