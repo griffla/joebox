@@ -62,7 +62,7 @@
   top: 0; }
 
 .joebox-icon {
-  background-color: #E22A1B;
+  background-color: #ffde00;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -75,7 +75,7 @@
   width: 50px;
   z-index: 99; }
   .joebox-icon:hover {
-    background-color: #e95347;
+    background-color: #ffe533;
     transform: scale(1.1); }
   .joebox-icon i {
     display: inline-block;
@@ -98,7 +98,7 @@
           left: auto;
           right: 2%; } }
     .joebox-icon.joebox-nav-icon i {
-      border: solid #fff;
+      border: solid #000;
       border-width: 0 4px 4px 0;
       margin: .9em 0 0;
       padding: 7px;
@@ -118,7 +118,7 @@
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg); }
       .joebox-icon.joebox-nav-icon i:hover {
-        border-color: #fff; }
+        border-color: #000; }
   .joebox-icon.joebox-close-icon {
     bottom: 0;
     right: 0; }
@@ -128,19 +128,19 @@
         top: 2%;
         right: 2%; } }
     .joebox-icon.joebox-close-icon i:before, .joebox-icon.joebox-close-icon i:after {
-      background-color: #fff;
+      background-color: #000;
       content: ' ';
       height: 30px;
       left: -1px;
       position: absolute;
-      top: -5px;
+      top: -4px;
       width: 3.5px; }
     .joebox-icon.joebox-close-icon i:before {
       transform: rotate(45deg); }
     .joebox-icon.joebox-close-icon i:after {
       transform: rotate(-45deg); }
     .joebox-icon.joebox-close-icon i:hover {
-      background-color: #fff; }
+      background-color: #000; }
   .joebox-icon.disabled {
     background-color: #ccc;
     opacity: .6; }
@@ -155,8 +155,8 @@
   height: 5vw; }
 
 .joebox-loader {
-  border: 1.1em solid rgba(226, 42, 27, 0.4);
-  border-left-color: #E22A1B;
+  border: 1.1em solid rgba(255, 222, 0, 0.4);
+  border-left-color: #ffde00;
   font-size: 10px;
   left: 45vw;
   margin: 0 0 0 0;

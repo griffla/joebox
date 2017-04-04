@@ -1,8 +1,8 @@
 // Base Color 
-$color: #fff;
-$color-hover: $color;
-$bg-color: #E22A1B;
-$bg-color-hover: lighten($bg-color, 10%);
+$joebox-icon-color: #000;
+$joebox-icon-color-hover: $joebox-icon-color;
+$joebox-icon-bg-color: #ffde00;
+$joebox-icon-bg-color-hover: lighten($joebox-icon-bg-color, 10%);
 
 // Media Queries
 $tablet-width: 768px;
@@ -109,7 +109,7 @@ $desktop-width: 1024px;
 // GENERAL
 // ------------------
 .joebox-icon {
-  background-color: $bg-color;
+  background-color: $joebox-icon-bg-color;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -130,7 +130,7 @@ $desktop-width: 1024px;
   }
   
   &:hover {
-    background-color: $bg-color-hover;
+    background-color: $joebox-icon-bg-color-hover;
     transform: scale(1.1);
   }
   
@@ -169,7 +169,7 @@ $desktop-width: 1024px;
     }
 
     i {
-      border: solid $color;
+      border: solid $joebox-icon-color;
       border-width: 0 4px 4px 0;
       margin: .9em 0 0;
       padding: 7px;
@@ -199,7 +199,7 @@ $desktop-width: 1024px;
       
       // Hover
       &:hover {
-        border-color: $color-hover;
+        border-color: $joebox-icon-color-hover;
       }
     }
   }
@@ -220,12 +220,12 @@ $desktop-width: 1024px;
     i {
       &:before, 
       &:after {
-        background-color: $color;
+        background-color: $joebox-icon-color;
         content: ' ';
         height: 30px;
         left: -1px;
         position: absolute;
-        top: -5px;
+        top: -4px;
         width: 3.5px;
       }
 
@@ -239,7 +239,7 @@ $desktop-width: 1024px;
       
       // Hover
       &:hover {
-        background-color: $color-hover;
+        background-color: $joebox-icon-color-hover;
       }
     }
   }
@@ -263,8 +263,8 @@ $desktop-width: 1024px;
   height: 5vw;
 }
 .joebox-loader {
-  border: 1.1em solid rgba($bg-color, .4);
-  border-left-color: $bg-color;
+  border: 1.1em solid rgba($joebox-icon-bg-color, .4);
+  border-left-color: $joebox-icon-bg-color;
   font-size: 10px;
   left: 45vw;
   margin: 0 0 0 0;
