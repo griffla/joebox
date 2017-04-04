@@ -1,6 +1,6 @@
 {
   "name": "joebox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "joebox is a lightbox. I am joebox. Swipe images smoother with me.",
   "main": "dist/js/jquery.joebox.min.js",
   "dependencies": {
