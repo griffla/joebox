@@ -167,7 +167,7 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
 
                 $active_img
                 .css({
-                  width: $joebox_item.width() / 1.2,
+//                  width: $joebox_item.width() / 1.2,
                 });
               }
 
@@ -335,19 +335,19 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
         left: -joebox_inner_target_offset,
       }, settings.slide_duration, settings.slide_easing);
 
-      $slide_in_img
-      .finish()
-      .animate({
-        width: $joebox_item_active.width(),
-      }, settings.slide_duration, settings.slide_easing, function () {
-        $slide_in_img.css('width', '');
-      });
-
-      $slide_out_img
-      .finish()
-      .animate({
-        width: $joebox_item_active.width() / 1.2,
-      }, settings.slide_duration, settings.slide_easing);
+//      $slide_in_img   
+//      .finish()
+//      .animate({
+//        width: $joebox_item_active.width(),
+//      }, settings.slide_duration, settings.slide_easing, function () {
+//        $slide_in_img.css('width', '');
+//      });
+//
+//      $slide_out_img
+//      .finish()
+//      .animate({
+//        width: $joebox_item_active.width() / 1.2,
+//      }, settings.slide_duration, settings.slide_easing);
       
       
         /* Preload siblings if defined */
