@@ -28,7 +28,7 @@ gulp.task('scripts', function() {
       './resources/js/jquery.joebox.plugin.js',
     ])
     .pipe(concat('jquery.joebox.min.js'))
-    .pipe(stripDebug()) // take back for prod
+//    .pipe(stripDebug()) // take back for prod
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js/'));
 });

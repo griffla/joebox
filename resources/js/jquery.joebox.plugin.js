@@ -47,7 +47,7 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
       
       this
       .addClass('joebox-gallery')
-      .on('mousedown touchend', 'a img:only-child()', function (e) {
+      .on('click touchend', 'a img:only-child()', function (e) {
         var $this = $(this);
         jQuery.data(document.body, "joebox-gallery", $(this).closest('.joebox-gallery'));
         if (joebox_dragging)
@@ -105,8 +105,12 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
 
       methods.joebox_build_items($joebox, $trigger);
       
+      console.log('jQuery.data(document.body, "joebox-gallery").attr(id): ', jQuery.data(document.body, "joebox-gallery").attr('id'));
+      
       $('body')
-      .on('mousedown touchend', '#joebox-' + jQuery.data(document.body, "joebox-gallery").attr('id'), function (e) {
+      .on('click touchend', '#joebox-' + jQuery.data(document.body, "joebox-gallery").attr('id'), function (e) {
+        console.log('clicked gallery!');
+        console.log('joebox_dragging: ', joebox_dragging);
         if (!joebox_dragging) {
           var $target = $(e.target),
               $active_img = $(this).find('.joebox-item.active').find('img'),
@@ -114,6 +118,8 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
               act_pos_y = parseInt($active_img.offset().top),
               act_height = parseInt($active_img.height()),
               act_width = parseInt($active_img.width());
+          
+          console.log('$target: ', $target);
 
           if (
             !$target.hasClass('joebox-nav-icon') &&
