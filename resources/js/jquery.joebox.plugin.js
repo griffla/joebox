@@ -127,7 +127,7 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
           ) {
             methods.joebox_hide($(this));
           }
-          else if ($target.hasClass('joebox-close-icon')) {
+          else if ($target.is('.joebox-close-icon') || $('.joebox-close-icon').has(e.target).length > 0) {
             methods.joebox_hide($(this));
           }
         }
