@@ -4,7 +4,7 @@
   "description": "joebox is a lightbox. I am joebox. Swipe images smoother with me.",
   "main": "dist/js/jquery.joebox.min.js",
   "dependencies": {
-    "jquery": "^1.9",
+    "jquery": "^3.0.0",
     "touchSwipe": "^1.6.18"
   },
   "devDependencies": {},
