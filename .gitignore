@@ -20,6 +20,8 @@ components/jquery/dist/jquery.min.map
 components/jquery/dist/jquery.slim.js
 components/jquery/dist/jquery.slim.min.js
 components/jquery/dist/jquery.slim.min.map
+/components/
+/demo/
 /node_modules/
 /resources/images/
 /resources/css/joebox.css.map
